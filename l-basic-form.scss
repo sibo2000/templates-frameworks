@@ -1,0 +1,49 @@
+/* Code copied and edited from http://webdesign.tutsplus.com/tutorials/site-elements/bring-your-forms-up-to-date-with-css3-and-html5-validation/ */
+
+
+form {
+	div {
+		label {
+			display: block;
+		}
+		input, textarea  {
+			width: 66%;
+			padding: 1em;
+			border:1px solid #aaa;
+	    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+	    border-radius:2px;
+			/* Animates when user is focued on field - uses the padding right on the: focus */
+	    -moz-transition: padding .25s;
+	    -webkit-transition: padding .25s;
+	    -o-transition: padding .25s;
+	    transition: padding .25s;
+		}
+		input:focus, textarea:focus  {
+	    border:1px solid #aaa;
+	    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+			padding-right:70px;
+		}
+		input:required, textarea:required {
+		    background: #fff url(images/red_asterisk.png) no-repeat 98% center;
+		}
+		/* Styles the validation tooltip */
+		::-webkit-validation-bubble-message {
+		    padding: 1em;
+		}
+		input[type=submit] {
+			@include basic-button;
+		}
+		input[type=submit]:hover {
+		    opacity:.85;
+		    cursor: pointer;
+		}
+		/* Style placeholder text */
+		:-moz-placeholder { color: #909090; }
+		::-webkit-input-placeholder { color: #909090; }
+	}	
+}
+
+/* Anti Spam */
+#yourURL { display: none;}
+
+

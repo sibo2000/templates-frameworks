@@ -1,0 +1,59 @@
+
+
+/* --------------------------------------------
+	----------- Smartphones -----------  
+	
+		screen is maximum 480px
+		columns stack up
+ -------------------------------------------- */
+
+@media screen and (max-width : 480px) {
+/* Styles */
+	.page-wrap-repsonsive {
+		width: 320px;
+		margin: 0 auto;
+	}
+	.col {
+		float: none;
+		width: 100%;
+	}				
+}
+
+/* -----------------------------------------------
+	----------- Small screen and tablets -----------  
+	
+		screen is larger than 768px
+--------------------------------------------------  */
+
+
+
+
+/* -----------------------------------------------
+	----------- Desktops and laptops -----------  
+	
+	screen is larger than 1024px
+--------------------------------------------------  */
+
+@media screen and (min-width : 1024px) {
+	.page-wrap-repsonsive {
+		width: 960px;
+		margin: 0 auto;
+	}
+}
+
+
+/* -----------------------------------------------
+	----------- Larger screens -----------  
+	
+	screen is larger than 1400px
+	Set max width on columns
+--------------------------------------------------  */
+
+@media screen and (min-width : 1400px) {
+	.page-wrap-repsonsive {
+		width: 1280px;
+		margin: 0 auto;
+	}
+}
+
+
